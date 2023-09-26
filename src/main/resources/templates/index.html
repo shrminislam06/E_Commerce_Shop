@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          \integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <title>index</title>
+</head>
+<body class="body" style="background-color: beige">
+<nav class="navbar navbar-expand-lg navbar-light " style="background: coral;">
+<!--    <a class="navbar-brand">-->
+       <img th:src="@{/img/logo.jpg}" width="30px" height="30px">Pastry House</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto justify-content-end">
+            <li class="nav-item active">
+                <a class="nav-link" href="@{/index}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cookies</a>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pastry</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Fast Food</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dessert&Sweet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Beverage</a>
+            </li>
+        </ul>
+
+            <a class="btn btn-outline-success my-2 my-sm-0" th:href="@{/admin}" type="submit">Admin</a>
+
+    </div>
+</nav>
+<div class="container" style="height:300px;width: 250vh;background:lightpink;margin-top: 40px;" >
+<div class="container" >
+    <div class="text-center" >
+        <div class="justify-content-center" style="padding: 100px;">
+        <h1 class="text text-bold" style="color:saddlebrown;">Pastry House</h1>
+        <p>Made your mood delicious!!</p>
+        </div>
+    </div>
+
+<!--    <div class="card">-->
+<!--        <div class="card-body">-->
+<!--            <h5 class="card-title">Card title</h5>-->
+<!--            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+<!--            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+<!--        </div>-->
+<!--        <img class="card-img-bottom" th:src="@{/img/banner.jpg}" alt="Card image cap">-->
+<!--    </div>-->
+<!--</div>-->
+</div>
+<br/>
+
+<!--cards-->
+<div class="card-columns">
+<!--    <div class="col-sm-2">-->
+<!--        <div class="card">-->
+<!--            <div class="card" style="width: 18rem;">-->
+<!--                <img th:src="@{/img/cookies.jpg}">-->
+<!--                 <div class="card-body">-->
+<!--                    <h5 class="card-title">Special title treatment</h5>-->
+<!--    &lt;!&ndash;                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>&ndash;&gt;-->
+<!--                    <a href="#" class="btn btn-primary">About</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="card">-->
+<!--            <div class="col-sm-2">-->
+<!--            <div class="card" style="width: 18rem;">-->
+<!--                    <img th:src="@{/img/cookies.jpg}">-->
+<!--                    <div class="card-body">-->
+<!--                    <h5 class="card-title">Special title treatment</h5>-->
+<!--    &lt;!&ndash;                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>&ndash;&gt;-->
+<!--                    <a href="#" class="btn btn-primary">About</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-sm-2">-->
+<!--            <div class="card" style="width: 18rem;">-->
+<!--                <img th:src="@{/img/cookies.jpg}">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Special title treatment</h5>-->
+<!--&lt;!&ndash;                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>&ndash;&gt;-->
+<!--                    <a href="#" class="btn btn-primary">About</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+    <div class="card p-3 bg-warning">
+        <img class="card-img-top" th:src="@{/img/cookies.jpg}" alt="Card image cap">
+        <blockquote class="blockquote mb-0 card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <footer class="blockquote-footer">
+                <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+            </footer>
+        </blockquote>
+        <a href="#" class="btn btn-danger">Add To Card</a>
+    </div>
+        <div class="card p-3 " style="background: mediumorchid;">
+            <img class="card-img-top" th:src="@{/img/dark-chocolet.jpg}" alt="Card image cap">
+            <blockquote class="blockquote mb-0 card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <footer class="blockquote-footer">
+                    <small class="text-muted">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </small>
+                </footer>
+            </blockquote>
+            <a href="#" class="btn btn-warning">Add To Card</a>
+        </div>
+    <div class="card p-3" style="background:yellow">
+        <img class="card-img-top" th:src="@{/img/donuts.jpg}" alt="Card image cap">
+        <blockquote class="blockquote mb-0 card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <footer class="blockquote-footer">
+                <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+            </footer>
+        </blockquote>
+        <a href="#" class="btn btn-warning">Add To Card</a>
+    </div>
+    <div class="card p-3" style="background: hotpink">
+        <img class="card-img-top" th:src="@{/img/fruit.jpg}" alt="Card image cap">
+        <blockquote class="blockquote mb-0 card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <footer class="blockquote-footer">
+                <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+            </footer>
+
+        </blockquote>
+        <a href="#" class="btn btn-warning">Add To Card</a>
+    </div>
+    <div class="card p-3" style="background: red">
+        <img class="card-img-top" th:src="@{/img/mango.jpg}" alt="Card image cap">
+        <blockquote class="blockquote mb-0 card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <footer class="blockquote-footer">
+                <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+            </footer>
+        </blockquote>
+        <a href="#" class="btn btn-warning">Add To Card</a>
+
+    </div>
+    <div class="card p-3" style="background: lightseagreen">
+        <img class="card-img-top" th:src="@{/img/milk.jpg}" alt="Card image cap">
+        <blockquote class="blockquote mb-0 card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <footer class="blockquote-footer">
+                <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+            </footer>
+        </blockquote>
+        <a href="#" class="btn btn-warning">Add To Card</a>
+    </div>
+    <div class="card p-3" style="background: chocolate">
+        <img class="card-img-top" th:src="@{/img/strawberry.jpg}" alt="Card image cap">
+        <blockquote class="blockquote mb-0 card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <footer class="blockquote-footer">
+                <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+            </footer>
+        </blockquote>
+        <a href="#" class="btn btn-warning">Add To Card</a>
+    </div>
+    <div class="card p-3" style="background: dodgerblue">
+        <img class="card-img-top" th:src="@{/img/vanila.jpg}" alt="Card image cap">
+        <blockquote class="blockquote mb-0 card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <footer class="blockquote-footer">
+                <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+            </footer>
+        </blockquote>
+        <a href="#" class="btn btn-warning">Add To Card</a>
+    </div>
+    </div>
+<hr/>
+<br/>
+<hr/>
+<div class="footer-container">
+    <div class="card-deck">
+        <div class="card" style="background: lightblue">
+<!--            <img class="card-img-top" src="..." alt="Card image cap">-->
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card" style="background: lightpink">
+<!--            <img class="card-img-top" src="..." alt="Card image cap">-->
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card" style="background: lightsalmon">
+<!--            <img class="card-img-top" src="..." alt="Card image cap">-->
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="card" style="background: saddlebrown;margin-top: 10px;">
+        <div class="card-body">
+            <p class="text-light">This is some text within a card body.</p>
+        </div>
+    </div>
+</div>
+<br/>
+<hr/>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
